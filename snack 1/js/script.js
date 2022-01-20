@@ -28,32 +28,7 @@ for (let i = 0; i < biciclette.length; i++){
         pesoMin = peso;
     }
 }
+console.log(pesoMin);
 console.log(bicicletta);
-console.log(`la bicicletta che pesa di meno è ${bicicletta.nome} con un peso di ${bicicletta.peso} kilogrammi. `);
+console.log(`La bicicletta che pesa di meno è ${bicicletta.nome} con un peso di ${bicicletta.peso} kilogrammi. `);
 
-// let bicicletta;
-// let pesoBici;
-// let pesomin;
-// for (let i = 0; i < biciclette.length; i++){
-//     // bicicletta = biciclette[i];
-//     // console.log(bicicletta);
-//     pesoBici = biciclette[i].peso;
-//     console.log(pesoBici);
-//     // if ( i == 0){
-//     //     pesomin = bicicletta.peso;
-//     // }
-
-//     // if (bicicletta.peso < pesomin){
-//     //     pesomin = bicicletta.peso;
-//     // }
-
-// }
-
-// console.log(pesomin);
-
-// const {peso} = biciclette[i];
-
-// DESTRUCTURING
-// keyword(var, let o const) {nome proprietà} = oggetto da cui prendere i valori
-
-//TEMPLATE LITERAL
