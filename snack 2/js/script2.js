@@ -31,20 +31,17 @@ const Squadre = [
 
 console.table(Squadre);
 let squadra;
-let rpoints;
-let fpoints;
 const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 for (i = 0; i < Squadre.length; i++){
     squadra = Squadre[i];
     console.log(squadra);
-    const {punti, falli} = squadra;
-    console.log(`punti: ${punti}, falli ${falli}`);
-    for(let j = 0; j < squadra.length; j++){
-           
-    }
-
+    squadra.punti = getRandomNumber();
+    squadra.falli = getRandomNumber();
+    const {nome, falli} = squadra;
+    console.log(`nome: ${nome}, falli ${falli}`);
 }
-console.log(rpoints);
-console.log(fpoints);
 
+const TabelloneFN = [];
+
+TabelloneFN.push(squadra);

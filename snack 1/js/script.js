@@ -23,7 +23,7 @@ let pesoMin;
 for (let i = 0; i < biciclette.length; i++){
     bicicletta = biciclette[i];
     const {peso} = bicicletta;
-    console.log(peso);
+    console.table(peso);
     if (i == 0 || peso < pesoMin){
         pesoMin = peso;
     }
