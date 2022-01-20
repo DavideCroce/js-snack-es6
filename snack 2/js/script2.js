@@ -32,7 +32,7 @@ const Squadre = [
 console.table(Squadre);
 let squadra;
 const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
-
+const TabelloneFN = [];
 for (i = 0; i < Squadre.length; i++){
     squadra = Squadre[i];
     console.log(squadra);
@@ -40,8 +40,18 @@ for (i = 0; i < Squadre.length; i++){
     squadra.falli = getRandomNumber();
     const {nome, falli} = squadra;
     console.log(`nome: ${nome}, falli ${falli}`);
+    TabelloneFN.push(squadra);
 }
 
-const TabelloneFN = [];
+console.table(TabelloneFN);
 
-TabelloneFN.push(squadra);
+// const TabelloneFN = [];
+
+// TabelloneFN.push(squadra);
+// console.table(TabelloneFN);
+
+// for (j = 0; j < squadra.length; j++){
+//     TabelloneFN.push(squadra);
+
+//      console.table(TabelloneFN);
+// }
