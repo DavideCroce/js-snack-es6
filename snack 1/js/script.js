@@ -18,14 +18,38 @@ const biciclette = [
 ];
 
 console.log(biciclette);
-
-let bicicletta = 0;
-
+let bicicletta;
+let pesoMin;
 for (let i = 0; i < biciclette.length; i++){
     bicicletta = biciclette[i];
+    const {peso} = bicicletta;
+    console.log(peso);
+    if (i == 0 || peso < pesoMin){
+        pesoMin = peso;
+    }
 }
-
 console.log(bicicletta);
+console.log(`la bicicletta che pesa di meno è ${bicicletta.nome} con un peso di ${bicicletta.peso} kilogrammi. `);
+
+// let bicicletta;
+// let pesoBici;
+// let pesomin;
+// for (let i = 0; i < biciclette.length; i++){
+//     // bicicletta = biciclette[i];
+//     // console.log(bicicletta);
+//     pesoBici = biciclette[i].peso;
+//     console.log(pesoBici);
+//     // if ( i == 0){
+//     //     pesomin = bicicletta.peso;
+//     // }
+
+//     // if (bicicletta.peso < pesomin){
+//     //     pesomin = bicicletta.peso;
+//     // }
+
+// }
+
+// console.log(pesomin);
 
 // const {peso} = biciclette[i];
 
